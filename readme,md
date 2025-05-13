@@ -1,0 +1,92 @@
+# Green Haven Plant Shop - React Redux E-commerce Project
+
+This is a frontend e-commerce application for a plant shop built with React and Redux. It demonstrates modern web development practices including state management with Redux Toolkit, routing with React Router, and responsive design.
+
+## Features
+
+### Landing Page
+- Attractive background image
+- Company name and description
+- Get Started button linking to product listing
+
+### Header
+- Displayed on both product and cart pages
+- Navigation links
+- Shopping cart icon with dynamic count
+
+### Product Listing Page
+- Six unique houseplants displayed with images, names, and prices
+- Plants grouped into three categories
+- Add to Cart button that:
+  - Increments the cart count when clicked
+  - Gets disabled after being clicked
+  - Adds the plant to the shopping cart
+
+### Shopping Cart Page
+- Displays total number of plants in cart
+- Calculates and shows total cost
+- Each plant shows thumbnail, name, and unit price
+- Increase/decrease buttons for each plant
+- Delete button to remove plants
+- Checkout button (displays "Coming Soon" message)
+- Continue Shopping button to return to products
+
+## Technologies Used
+
+- React 18
+- Redux Toolkit for state management
+- React Router for navigation
+- CSS for styling
+
+## Project Structure
+
+```
+plant-shop-redux/
+├── public/
+│   ├── index.html
+│   ├── images/
+│   │   ├── background.jpg
+│   │   └── plants/
+│   │       ├── plant1.jpg
+│   │       ├── plant2.jpg
+│   │       ├── plant3.jpg
+│   │       ├── plant4.jpg
+│   │       ├── plant5.jpg
+│   │       └── plant6.jpg
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   ├── index.css
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── LandingPage.js
+│   │   ├── ProductListing.js
+│   │   ├── PlantCard.js
+│   │   ├── ShoppingCart.js
+│   │   └── CartItem.js
+│   ├── redux/
+│   │   ├── store.js
+│   │   ├── cartSlice.js
+│   │   └── plantsSlice.js
+│   └── data/
+│       └── plantData.js
+└── package.json
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Requirements Checklist
+
+- ✅ GitHub repository
+- ✅ Redux implementation
+- ✅ Landing page with background, company info, and Get Started button
+- ✅ Product listing page with 6 plants in 3 categories
+- ✅ Add to Cart functionality with all required behaviors
+- ✅ Header on both pages with shopping cart icon and navigation
+- ✅ Shopping cart page with all required functionality
+- ✅ Responsive design
